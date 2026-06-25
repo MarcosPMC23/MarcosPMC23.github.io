@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcos Pedro Moreira Costa - Currículo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body.dark-mode {
+            background-color: #000000 !important;
+            color: #ffffff !important;
+        }
+
+        .dark-mode .bg-white {
+            background-color: #1a1a1a !important;
+            color: #ffffff !important;
+        }
+
+        .dark-mode .text-dark,
+        .dark-mode .text-muted,
+        .dark-mode .list-group-item {
+            color: #e0e0e0 !important;
+        }
+
+        .dark-mode .card,
+        .dark-mode .list-group-item {
+            background-color: #2d2d2d !important;
+            border-color: #444 !important;
+        }
+
+        .dark-mode h1, .dark-mode h2, .dark-mode h3, .dark-mode h4 {
+            color: #0d6efd !important;
+        }
+
+        .dark-mode .border-end {
+            border-color: #444 !important;
+        }
+    </style>
+</head>
+<body class="bg-light py-5">
+    <div class="container">
+        
+        <div class="row mb-4">
+            <div class="col text-center">
+                <div class="btn-group" role="group" aria-label="Seletor de Tema">
+                    <button type="button" class="btn btn-outline-primary" id="btn-light">Modo Claro</button>
+                    <button type="button" class="btn btn-outline-dark" id="btn-dark">Modo Escuro</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row bg-white p-4 rounded shadow-sm" id="content-row">
+            
+            <aside class="col-md-4 text-center border-end">
+                <img src="https://media.licdn.com/dms/image/v2/D4E03AQFkNzKpU8QbBA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1711568184167?e=2147483647&v=beta&t=XjgOonpRDOx3eo5GpkVJHHo7Mw-i0bgjKXeGPQM5Pms" class="img-fluid rounded-circle mb-3 border border-3 border-primary" alt="Marcos Pedro" style="width: 150px; height: 150px; object-fit: cover;">
+                <h3 class="fw-bold">Marcos Pedro</h3>
+                <p class="text-muted">Estudante & Entusiasta de Tecnologia</p>
+                <div class="d-grid gap-2 px-4 mt-3">
+                    <a href="https://www.instagram.com/marcos_pedrom" target="_blank" class="btn btn-outline-primary rounded-pill">
+                        Siga no Insta!
+                    </a>
+                </div>
+
+                <div class="card mt-4 border-primary shadow">
+                    <div class="card-header bg-primary text-white fw-bold">
+                        Quiz Rápido!
+                    </div>
+                    <div class="card-body" id="quiz-container">
+                        <p class="card-text text-dark">Qual dessas curiosidades sobre mim é verdadeira?</p>
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-outline-secondary btn-sm quiz-opt" data-correct="false">Já ganhei uma maratona de programação.</button>
+                            <button class="btn btn-outline-secondary btn-sm quiz-opt" data-correct="true">Tenho mais de 7 mil horas jogadas de Roblox.</button>
+                            <button class="btn btn-outline-secondary btn-sm quiz-opt" data-correct="false">Sei tocar 5 instrumentos musicais.</button>
+                        </div>
+                        <div id="quiz-feedback" class="mt-3 d-none mt-2 fw-bold"></div>
+                    </div>
+                </div>
+
+            </aside>
+
+            <main class="col-md-8 px-md-4 mt-4 mt-md-0">
+                <h1 class="text-primary mb-4 border-bottom pb-2">Marcos Pedro Moreira Costa, quem é?</h1>
+                
+                <h2 class="h4 text-secondary mt-4">Sobre mim</h2>
+                <div class="card border-0 bg-light mb-4">
+                    <div class="card-body">
+                        <p class="card-text">Sempre tive afinidade com a área de informática, desde mais novo observava meus irmãos usando o computador e esperava ansiosamente pela minha vez.</p>
+                        <p class="card-text">Ainda que não soubesse utilizar da maneira correta, ficava horas no Word digitando palavras aleatórias e pedia a minha mãe que lesse.</p>
+                        <p class="card-text text-primary fw-bold">Tenho mais de 7 mil horas jogadas de roblox.</p>
+                    </div>
+                </div>
+
+                <h2 class="h4 text-secondary mt-4">Minha formação</h2>
+                <ul class="list-group list-group-flush shadow-sm rounded">
+                    <li class="list-group-item d-flex justify-content-between align-items-start py-3">
+                        <div class="ms-2 me-auto">
+                            <div class="fw-bold text-dark">Técnico em Informática</div>
+                            IFNMG - Campus Januária
+                        </div>
+                        <span class="badge bg-secondary rounded-pill">2023</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-start py-3">
+                        <div class="ms-2 me-auto">
+                            <div class="fw-bold text-dark">Bacharelado em Engenharia de Software</div>
+                            Unopar Anhanguera
+                        </div>
+                        <span class="badge bg-success rounded-pill">Cursando (2026)</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-start py-3">
+                        <div class="ms-2 me-auto">
+                            <div class="fw-bold text-dark">Técnico em Suporte e Manutenção</div>
+                            IFNMG - Campus Januária
+                        </div>
+                        <span class="badge bg-success rounded-pill">Cursando (2026)</span>
+                    </li>
+                </ul>
+            </main>
+
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        const body = document.body;
+        const btnLight = document.getElementById('btn-light');
+        const btnDark = document.getElementById('btn-dark');
+
+        btnUncheckTheme = () => {
+            btnLight.classList.remove('active');
+            btnDark.classList.remove('active');
+        }
+
+        btnLight.addEventListener('click', () => {
+            body.classList.remove('dark-mode');
+            body.classList.add('bg-light');
+            btnUncheckTheme();
+            btnLight.classList.add('active');
+        });
+
+        btnDark.addEventListener('click', () => {
+            body.classList.add('dark-mode');
+            body.classList.remove('bg-light');
+            btnUncheckTheme();
+            btnDark.classList.add('active');
+        });
+
+        const quizOptions = document.querySelectorAll('.quiz-opt');
+        const feedbackDiv = document.getElementById('quiz-feedback');
+
+        quizOptions.forEach(button => {
+            button.addEventListener('click', () => {
+                quizOptions.forEach(btn => {
+                    btn.disabled = true;
+                    btn.classList.remove('btn-outline-secondary');
+                    if (btn.getAttribute('data-correct') === 'true') {
+                        btn.classList.add('btn-success');
+                    } else {
+                        btn.classList.add('btn-danger');
+                    }
+                });
+
+                feedbackDiv.classList.remove('d-none', 'alert-success', 'alert-danger', 'text-success', 'text-danger');
+                
+                const isCorrect = button.getAttribute('data-correct') === 'true';
+                if (isCorrect) {
+                    feedbackDiv.textContent = "Acertou! É muito tempo de jogo 😂";
+                    feedbackDiv.classList.add('text-success');
+                } else {
+                    feedbackDiv.textContent = "Errado! A resposta correta está destacada em verde.";
+                    feedbackDiv.classList.add('text-danger');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
